@@ -1,5 +1,39 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "0.0.0",
-  "patches": []
-}
+  "version": "1.0.0-dev.1",
+  "patches": [
+    {
+      "name": "Disable Telemetry Patch",
+      "description": "Disables Telemetry.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.openai.chatgpt",
+          "name": "ChatGPT app",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#FF0045",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "2.0.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": null
+            },
+            {
+              "version": "1.0.2",
+              "versionCodes": (2616700),
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    }
