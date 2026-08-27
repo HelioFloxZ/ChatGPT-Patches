@@ -4,7 +4,7 @@
   "patches": [
     {
       "name": "Disable Telemetry Patch",
-      "description": "Disables Telemetry.",
+      "description": "Disable Telemetry.",
       "default": true,
       "dependencies": [
         "BytecodePatch"
