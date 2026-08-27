@@ -8,8 +8,8 @@ private const val EXTENSION_CLASS = "Lapp/template/extension/ExamplePatch;"
 
 @Suppress("unused")
 val examplePatch = bytecodePatch(
-    name = "Example Patch",
-    description = "Example patch to start with.",
+    name = "Disable Telemetry Patch",
+    description = "Disables Telemetry.",
     default = true
 ) {
     compatibleWith(COMPATIBILITY_EXAMPLE)
